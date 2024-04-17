@@ -23,7 +23,7 @@ const CreateTasks = () => {
     };
     setLoading(true);
     axios
-      .post('http://localhost:7777/tasks', data)
+      .post('https://task-project-779m.vercel.app/tasks', data)
       .then(() => {
         setLoading(false);
         enqueueSnackbar('Task Created successfully', { variant: 'success' });
