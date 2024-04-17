@@ -16,7 +16,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get('http://localhost:7777/tasks')
+      .get('https://task-project-779m.vercel.app/tasks')
       .then((response) => {
         setTasks(response.data.data);
         setLoading(false);
