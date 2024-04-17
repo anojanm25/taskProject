@@ -13,7 +13,7 @@ const DeleteTask = () => {
 
   const handleDeleteTask = () => {
     setLoading(true);
-    axios.delete(`http://localhost:7777/tasks/${id}`)  
+    axios.delete(`https://task-project-779m.vercel.app/tasks/${id}`)  
       .then(() => {
         enqueueSnackbar('Task Deleted successfully', { variant: 'success' });
       })
