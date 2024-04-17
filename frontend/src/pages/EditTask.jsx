@@ -17,7 +17,7 @@ const EditTask = () => {
 
   useEffect(() => {
     setLoading(true);
-    axios.get(`http://localhost:7777/tasks/${id}`)
+    axios.get(`https://task-project-779m.vercel.app/tasks/${id}`)
     .then((response) => {
         setDescription(response.data.description);
         setDueDate(response.data.dueDate.slice(0, 10));  
